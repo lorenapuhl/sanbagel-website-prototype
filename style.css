@@ -159,7 +159,7 @@ footer {                          /* Styles for the footer section */
   left: -300px;                   /* Positions menu 300px left of screen (hidden off-screen by default) */
   width: 280px;                   /* Sets menu width to 280 pixels */
   height: 100vh;                  /* Sets menu height to 100% of viewport height */
-  background-color: #111;         /* Sets menu background to very dark gray */
+  background-color: var(--font-color);        /* Sets menu background */
   z-index: 1001;                  /* Places menu above most other elements (higher number = more forward) */
   transition: left 0.3s ease;     /* Animates the left position change over 0.3 seconds */
   padding: 70px 20px 30px 20px;   /* Adds 70px top, 20px left/right, 30px bottom padding */
@@ -180,7 +180,7 @@ footer {                          /* Styles for the footer section */
   z-index: 1000;                  /* Places button above most elements (but below slide-menu) */
   cursor: pointer;                /* Changes cursor to pointer/hand when hovering */
   padding: 12px;                  /* Adds 12px padding inside button on all sides */
-  background-color: rgba(0, 0, 0, 0.9);  /* Sets background to black with 90% opacity */
+  background-color: var(--font-color); ;  /* Sets background to black with 90% opacity */
   border-radius: 5px;             /* Rounds the corners by 5 pixels */
   flex-direction: column;         /* Stacks child elements (bars) vertically */
   gap: 5px;                       /* Adds 5px space between each bar */
@@ -215,7 +215,7 @@ footer {                          /* Styles for the footer section */
 /* Menu content styles */
 .menu-content {                   /* Styles for the content container inside slide menu */
   text-align: left;               /* Left-aligns all text in menu content */
-  color: white;                   /* Sets text color to white */
+  color: var(--background-color);                   /* Sets text color to white */
 }
 
 .menu-content h3 {                /* Styles for h3 headings inside menu content */
