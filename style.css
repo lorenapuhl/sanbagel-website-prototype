@@ -42,12 +42,20 @@
  MAIN VARIABLES
  ======================================== */
    
- :root {
-/* Defining the variables using the tones from your images */
---background-color: #C6B299;  /* Light Brown */
---font-color: #413021;      /* Dark Brown */
---hover-color: #FF4433; /*  Orange */
---header-color: #FF4433; /*  Orange */
+:root {
+  /* Defining the variables using the tones from your images */
+  
+  /* Light Brown from the chairs */
+  --background-color: rgba(198, 178, 153, 1);  
+
+  /* Dark Brown from the wall */
+  --font-color: rgba(65, 48, 33, 1);           
+
+  /* Orange from the artwork */
+  --hover-color: rgba(255, 68, 51, 1); 
+
+  /* Orange from the artwork */
+  --header-color: rgba(255, 68, 51, 1); 
 }
   
  /* ========================================
@@ -202,7 +210,7 @@ footer {                          /* Styles for the footer section */
   left: 0;                        /* Starts overlay at left of screen */
   width: 100%;                    /* Makes overlay full screen width */
   height: 100%;                   /* Makes overlay full screen height */
-  background-color: rgba(0, 0, 0, 0.8);  /* Sets background to black with 80% opacity */
+  background-color: rgba(var(--background-color-rgb), 0.8);
   z-index: 999;                   /* Places overlay below menu (1001) but above other content */
   display: none;                  /* Hidden by default */
   backdrop-filter: blur(3px);     /* Adds 3px blur effect to content behind overlay */
@@ -220,7 +228,6 @@ footer {                          /* Styles for the footer section */
 
 .menu-content h3 {                /* Styles for h3 headings inside menu content */
   color: white;                   /* Sets heading text color to white */
-  font-family: 'Montserrat', sans-serif;  /* Uses Montserrat font */
   font-size: 18px;                /* Sets font size to 18 pixels */
   margin: 20px 0 15px 0;          /* Adds 20px top, 15px bottom margin (0 left/right) */
   text-transform: uppercase;      /* Transforms text to ALL CAPS */
@@ -244,11 +251,9 @@ footer {                          /* Styles for the footer section */
 .menu-links a {                   /* Styles for anchor links inside menu */
   display: block;                 /* Makes link a block element (takes full width) */
   padding: 15px 0;                /* Adds 15px padding top and bottom (0 left/right) */
-  color: #ccc;                    /* Sets link color to light gray */
+  color: var(--background-color);                    /* Sets link color to light gray */
   text-decoration: none;          /* Removes underline from links */
-  font-family: 'Montserrat', sans-serif;  /* Uses Montserrat font */
   font-size: 16px;                /* Sets font size to 16 pixels */
-  text-transform: uppercase;      /* Transforms text to ALL CAPS */
   letter-spacing: 1px;            /* Adds 1px space between letters */
   transition: all 0.2s ease;      /* Animates any changes over 0.2 seconds */
   text-align: left;               /* Left-aligns the link text */
