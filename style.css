@@ -227,7 +227,7 @@ footer {                          /* Styles for the footer section */
 }
 
 .menu-content h3 {                /* Styles for h3 headings inside menu content */
-  color: white;                   /* Sets heading text color to white */
+  color: var(--background-color);                   /* Sets heading text color to white */
   font-size: 18px;                /* Sets font size to 18 pixels */
   margin: 20px 0 15px 0;          /* Adds 20px top, 15px bottom margin (0 left/right) */
   text-transform: uppercase;      /* Transforms text to ALL CAPS */
