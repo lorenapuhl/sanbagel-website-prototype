@@ -22,7 +22,7 @@ website-prototype/
 
 - HTML5
 - CSS3
-- Google Fonts (Montserrat)
+- Google Fonts
 - Fouita Instagram Widget
 - GitHub Pages (hosting)
 
